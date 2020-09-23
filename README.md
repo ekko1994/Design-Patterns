@@ -35,7 +35,7 @@
 
 1）客户端不应该依赖它不需要的接口，即一个类对另一个类的依赖应该建立在最小的接口上。
 
-2）![](G:\IDEA-workspace\Design-Patterns\images\接口隔离原则1类图.png)
+2）![](https://github.com/jackhusky/Design-Patterns/blob/master/images/%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%991%E7%B1%BB%E5%9B%BE.png)
 
 3）类A通过接口Interface1依赖B，类C通过接口Interface1依赖D，如果接口Interface1对于类A和类C来说不是最小接口，那么类B和类D必须去实现他们不需要的方法。
 
