@@ -1,0 +1,20 @@
+@startuml
+
+class GraphicEditor
+note left: if(s.m_type==1) \n\tdrawRetangle \nelse if(s.m_type==2)\n\tdrawCircle();
+
+class GraphicEditor {
+    '画圆
+    +drawCircle():void
+    '画矩形
+    +drawRectangle():void
+    +drawShape():void
+}
+
+GraphicEditor --> Rectangle
+GraphicEditor --> Shape
+GraphicEditor --> Circle
+
+Rectangle --|> Shape
+Circle --|>Shape
+@enduml

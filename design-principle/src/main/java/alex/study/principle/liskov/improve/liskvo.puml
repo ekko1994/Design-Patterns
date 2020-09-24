@@ -1,0 +1,13 @@
+@startuml
+
+class Base
+
+together {
+    class A extends Base
+    class B extends Base
+}
+
+A -[hidden]> B
+B *-- A
+
+@enduml
