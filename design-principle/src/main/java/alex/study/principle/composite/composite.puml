@@ -1,0 +1,50 @@
+@startuml
+class A
+note right:继承会让B和A的耦合性增强
+class A {
+    +method1():void
+    +method2():void
+    +method3():void
+}
+'B继承A
+A <|-- B
+
+class C {
+    +method1():void
+    +method2():void
+    +method3():void
+}
+
+class D {
+    +method(c:C):void
+}
+'D依赖C
+C <-- D
+
+class E {
+    +method1():void
+    +method2():void
+    +method3():void
+}
+
+class F {
+    -e:E=new E()
+    +method():void
+}
+'E组合到F
+F *-- E
+
+class G {
+    +method1():void
+    +method2():void
+    +method3():void
+}
+
+class H {
+    -g:G
+    +setG():void
+}
+'G聚合到H
+H o-- G
+
+@enduml
