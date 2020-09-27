@@ -11,6 +11,7 @@
 
     <modules>
         <module>design-principle</module>
+        <module>design-singleton</module>
     </modules>
 
 </project>
