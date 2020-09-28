@@ -15,6 +15,7 @@
         <module>design-simplefactory</module>
         <module>design-factorymethod</module>
         <module>disign-abstractfactory</module>
+        <module>design-prototype</module>
     </modules>
 
 </project>
