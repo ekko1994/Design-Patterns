@@ -13,6 +13,7 @@
         <module>design-principle</module>
         <module>design-singleton</module>
         <module>design-simplefactory</module>
+        <module>design-factorymethod</module>
     </modules>
 
 </project>
