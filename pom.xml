@@ -17,6 +17,7 @@
         <module>disign-abstractfactory</module>
         <module>design-prototype</module>
         <module>design-builder</module>
+        <module>design-adapter</module>
     </modules>
 
 </project>
