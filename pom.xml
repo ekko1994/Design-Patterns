@@ -18,6 +18,7 @@
         <module>design-prototype</module>
         <module>design-builder</module>
         <module>design-adapter</module>
+        <module>design-bridge</module>
     </modules>
 
 </project>
