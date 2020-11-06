@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>design-bridge</artifactId>
-    <description>桥接模式</description>
+    <artifactId>disign-decorator</artifactId>
+    <description>装饰者模式</description>
 
 
 </project>

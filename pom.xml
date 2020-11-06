@@ -19,6 +19,7 @@
         <module>design-builder</module>
         <module>design-adapter</module>
         <module>design-bridge</module>
+        <module>disign-decorator</module>
     </modules>
 
 </project>
