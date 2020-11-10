@@ -22,6 +22,7 @@
         <module>disign-decorator</module>
         <module>design-composite</module>
         <module>design-facade</module>
+        <module>design-flyweight</module>
     </modules>
 
 </project>
