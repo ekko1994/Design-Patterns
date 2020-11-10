@@ -21,6 +21,7 @@
         <module>design-bridge</module>
         <module>disign-decorator</module>
         <module>design-composite</module>
+        <module>design-facade</module>
     </modules>
 
 </project>
