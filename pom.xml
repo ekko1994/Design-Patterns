@@ -23,6 +23,7 @@
         <module>design-composite</module>
         <module>design-facade</module>
         <module>design-flyweight</module>
+        <module>design-proxy</module>
     </modules>
 
 </project>
