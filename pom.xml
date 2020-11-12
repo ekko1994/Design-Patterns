@@ -26,6 +26,7 @@
         <module>design-proxy</module>
         <module>design-template</module>
         <module>design-command</module>
+        <module>design-visitor</module>
     </modules>
 
 </project>
