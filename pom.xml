@@ -24,6 +24,7 @@
         <module>design-facade</module>
         <module>design-flyweight</module>
         <module>design-proxy</module>
+        <module>design-template</module>
     </modules>
 
 </project>
