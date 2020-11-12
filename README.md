@@ -330,7 +330,7 @@ public class Runtime {
 
 ![抽象工厂模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/抽象工厂模式.png)
 
-## 原型设计模式
+## 原型模式
 
 在有些系统中，存在大量相同或相似对象的创建问题，如果用传统的构造函数来创建对象，会比较复杂且耗时耗资源，用原型模式生成对象就很高效，就像孙悟空拔下猴毛轻轻一吹就变出很多孙悟空一样简单。
 
@@ -375,7 +375,7 @@ public class Runtime {
 - 浅克隆：创建一个新对象，新对象的属性和原来对象完全相同，对于非基本类型属性，仍指向原有属性所指向的对象的内存地址。
 - 深克隆：创建一个新对象，属性中引用的其他对象也会被克隆，不再指向原有对象地址。(推荐使用序列化)
 
-## 建造者设计模式
+## 建造者模式
 
 又叫生成器模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。
 
@@ -388,7 +388,7 @@ public class Runtime {
 
 ![建造者设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/建造者模式.png)
 
-## 适配器设计模式
+## 适配器模式
 
 ### 基本介绍
 
@@ -419,7 +419,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![接口适配器设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/接口适配器模式.png)
 
-## 桥接设计模式
+## 桥接模式
 
 桥接（Bridge）是用于把抽象化与实现化解耦，使得二者可以独立变化。这种类型的设计模式属于结构型模式，它通过提供抽象化和实现化之间的桥接结构，来实现二者的解耦。
 
@@ -452,7 +452,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 - JDBC 驱动程序
 - 消息管理（消息类型：即时消息，延时消息；消息分类：手机短信，邮件消息，QQ 消息）
 
-## 装饰者设计模式
+## 装饰者模式
 
 装饰器模式（Decorator Pattern）允许向一个现有的对象添加新的功能，同时又不改变其结构。这种类型的设计模式属于结构型模式，它是作为现有的类的一个包装。
 
@@ -481,7 +481,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![装饰者设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/装饰者模式.png)
 
-## 组合设计模式
+## 组合模式
 
 组合模式（Composite Pattern），又叫部分整体模式，是用于把一组相似的对象当作一个单一的对象。组合模式依据树形结构来组合对象，用来表示部分以及整体层次。这种类型的设计模式属于结构型模式，它创建了对象组的树形结构。
 
@@ -507,7 +507,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![组合设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/组合模式.png)
 
-## 外观设计模式
+## 外观模式
 
 外观模式（Facade Pattern）隐藏系统的复杂性，并向客户端提供了一个客户端可以访问系统的接口。这种类型的设计模式属于结构型模式，它向现有的系统添加一个接口，来隐藏系统的复杂性。
 
@@ -535,7 +535,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![外观设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/外观模式.png)
 
-## 享元设计模式
+## 享元模式
 
 享元模式（Flyweight Pattern）主要用于减少创建对象的数量，以减少内存占用和提高性能。这种类型的设计模式属于结构型模式，它提供了减少对象数量从而改善应用所需的对象结构的方式。
 
@@ -565,7 +565,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![享元设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/享元模式.png)
 
-## 代理设计模式
+## 代理模式
 
 ### 静态代理
 
@@ -637,7 +637,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ![cglib代理设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/cglib代理.png)
 
-## 模板设计模式
+## 模板模式
 
 在模板模式（Template Pattern）中，一个抽象类公开定义了执行它的方法的方式/模板。它的子类可以按需要重写方法实现，但调用将
 
@@ -666,3 +666,39 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 > 注意事项：为防止恶意操作，一般模板方法都加上 final 关键词。
 
 ![模板设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/模板模式.png)
+
+## 命令模式
+
+命令模式（Command Pattern）是一种数据驱动的设计模式，它属于行为型模式。请求以命令的形式包裹在对象中，并传给调用对象。
+
+调用对象寻找可以处理该命令的合适的对象，并把该命令传给相应的对象，该对象执行命令。
+
+通俗易懂的理解：将军发布命令，士兵去执行。其中有几个角色：将军（命令发布者）、士兵（命令的具体执行者）、命令(连接将军和
+
+士兵)。Invoker 是调用者（将军），Receiver 是被调用者（士兵），MyCommand 是命令，实现了 Command 接口，持有接收对象
+
+![命令模式原理图](https://github.com/jackhusky/Design-Patterns/blob/master/images/命令模式原理图.png)
+
+意图：将一个请求封装成一个对象，从而使您可以用不同的请求对客户进行参数化。
+
+主要解决：在软件系统中，行为请求者与行为实现者通常是一种紧耦合的关系，但某些场合，比如需要对行为进行记录、撤销或重做、事务等处理时，这种无法抵御变化的紧耦合的设计就不太合适。
+
+何时使用：在某些场合，比如要对行为进行"记录、撤销/重做、事务"等处理，这种无法抵御变化的紧耦合是不合适的。在这种情况下，如何将"行为请求者"与"行为实现者"解耦？将一组行为抽象为对象，可以实现二者之间的松耦合。
+
+如何解决：通过调用者调用接受者执行命令，顺序：调用者→命令→接受者。
+
+关键代码：定义三个角色：1、received 真正的命令执行对象 2、Command 3、invoker 使用命令对象的入口
+
+应用实例：Spring 框架的 JdbcTemplate 就使用到了命令模式
+
+### 优点和缺点
+
+优点： 1、降低了系统耦合度。 2、新的命令可以很容易添加到系统中去。
+
+缺点：使用命令模式可能会导致某些系统有过多的具体命令类。
+
+使用场景：认为是命令的地方都可以使用命令模式
+
+> 注意事项：系统需要支持命令的撤销(Undo)操作和恢复(Redo)操作，也可以考虑使用命令模式，见命令模式的扩展。
+
+![命令模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/命令模式.png)
