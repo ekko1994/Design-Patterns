@@ -28,6 +28,7 @@
         <module>design-command</module>
         <module>design-visitor</module>
         <module>design-iterator</module>
+        <module>design-observer</module>
     </modules>
 
 </project>
