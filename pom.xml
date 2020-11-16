@@ -27,6 +27,7 @@
         <module>design-template</module>
         <module>design-command</module>
         <module>design-visitor</module>
+        <module>design-iterator</module>
     </modules>
 
 </project>
