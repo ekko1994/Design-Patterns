@@ -33,6 +33,7 @@
         <module>design-memento</module>
         <module>design-state</module>
         <module>design-strategy</module>
+        <module>design-responsibilitychain</module>
     </modules>
 
 </project>
