@@ -32,6 +32,7 @@
         <module>disign-mediator</module>
         <module>design-memento</module>
         <module>design-state</module>
+        <module>design-strategy</module>
     </modules>
 
 </project>
