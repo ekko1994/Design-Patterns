@@ -30,6 +30,8 @@
         <module>design-iterator</module>
         <module>design-observer</module>
         <module>disign-mediator</module>
+        <module>design-memento</module>
+        <module>design-state</module>
     </modules>
 
 </project>
