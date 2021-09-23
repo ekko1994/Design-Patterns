@@ -35,7 +35,7 @@
 
 1）客户端不应该依赖它不需要的接口，即一个类对另一个类的依赖应该建立在最小的接口上。
 
-2）![](https://github.com/jackhusky/Design-Patterns/blob/master/images/%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%991%E7%B1%BB%E5%9B%BE.png)
+2）![](images/%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%991%E7%B1%BB%E5%9B%BE.png)
 
 3）类A通过接口Interface1依赖B，类C通过接口Interface1依赖D，如果接口Interface1对于类A和类C来说不是最小接口，那么类B和类D必须去实现他们不需要的方法。
 
@@ -251,7 +251,7 @@ public class Runtime {
 
 - 具体产品（ConcreteProduct）：是简单工厂模式的创建目标。
 
-![简单工厂模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/简单工厂模式.png)
+![简单工厂模式](images/简单工厂模式.png)
 
 ## 工厂方法模式
 
@@ -286,7 +286,7 @@ public class Runtime {
 - 抽象产品（Product）：定义了产品的规范，描述了产品的主要特性和功能。
 - 具体产品（ConcreteProduct）：实现了抽象产品角色所定义的接口，由具体工厂来创建，它同具体工厂之间一一对应。
 
-![工厂方法模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/工厂方法模式.png)
+![工厂方法模式](images/工厂方法模式.png)
 
 ## 抽象工厂模式
 
@@ -296,7 +296,7 @@ public class Runtime {
 
 本节要介绍的抽象工厂模式将考虑多等级产品的生产，将同一个具体工厂所生产的位于不同等级的一组产品称为一个产品族，图 示的是海尔工厂和 TCL 工厂所生产的电视机与空调对应的关系图。
 
-![抽象工厂模式-产品登记和产品族](https://github.com/jackhusky/Design-Patterns/blob/master/images/抽象工厂模式-产品登记和产品族.png)
+![抽象工厂模式-产品登记和产品族](images/抽象工厂模式-产品登记和产品族.png)
 
 ### 模式的定义与特点
 
@@ -328,7 +328,7 @@ public class Runtime {
 - 抽象产品（Product）：定义了产品的规范，描述了产品的主要特性和功能，抽象工厂模式有多个抽象产品。
 - 具体产品（ConcreteProduct）：实现了抽象产品角色所定义的接口，由具体工厂来创建，它同具体工厂之间是多对一的关系。
 
-![抽象工厂模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/抽象工厂模式.png)
+![抽象工厂模式](images/抽象工厂模式.png)
 
 ## 原型模式
 
@@ -368,7 +368,7 @@ public class Runtime {
 
 - 访问类：使用具体原型类中的 clone() 方法来复制新的对象。
 
-![原型设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/原型设计模式.png)
+![原型设计模式](images/原型设计模式.png)
 
 原型模式的克隆分为浅克隆和深克隆。
 
@@ -386,7 +386,7 @@ public class Runtime {
 - ConcreteBuilder（具体建造者）： 实现接口，构建和装配各个部件。
 - Director（指挥者）： 构建一个使用 Builder 接口的对象。它主要是用于创建一个复杂的对象。它主要有两个作用，一是：隔离了客户与对象的生产过程，二是：负责控制产品对象的生产过程。
 
-![建造者设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/建造者模式.png)
+![建造者设计模式](images/建造者模式.png)
 
 ## 适配器模式
 
@@ -403,21 +403,21 @@ public class Runtime {
 - 用户调用适配器转化出来的目标接口方法，适配器再调用被适配者的相关接口方法
 - 用户收到反馈结果，感觉只是和目标接口交互，如图
 
-![适配器设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/适配器模式工作原理.png)
+![适配器设计模式](images/适配器模式工作原理.png)
 
 SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 ### 类适配器模式
 
-![类适配器设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/类适配器模式.png)
+![类适配器设计模式](images/类适配器模式.png)
 
 ### 对象适配器模式
 
-![对象适配器设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/对象适配器模式.png)
+![对象适配器设计模式](images/对象适配器模式.png)
 
 ### 接口适配器模式
 
-![接口适配器设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/接口适配器模式.png)
+![接口适配器设计模式](images/接口适配器模式.png)
 
 ## 桥接模式
 
@@ -445,7 +445,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：对于两个独立变化的维度，使用桥接模式再适合不过了。
 
-![桥接设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/桥接模式.png)
+![桥接设计模式](images/桥接模式.png)
 
 **常见的应用场景：**
 
@@ -479,7 +479,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：可代替继承。
 
-![装饰者设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/装饰者模式.png)
+![装饰者设计模式](images/装饰者模式.png)
 
 ## 组合模式
 
@@ -505,7 +505,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：定义时为具体类。
 
-![组合设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/组合模式.png)
+![组合设计模式](images/组合模式.png)
 
 ## 外观模式
 
@@ -533,7 +533,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：在层次化结构中，可以使用外观模式定义系统中每一层的入口。
 
-![外观设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/外观模式.png)
+![外观设计模式](images/外观模式.png)
 
 ## 享元模式
 
@@ -563,7 +563,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项： 1、注意划分外部状态和内部状态，否则可能会引起线程安全问题。 2、这些类必须有一个工厂对象加以控制。
 
-![享元设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/享元模式.png)
+![享元设计模式](images/享元模式.png)
 
 ## 代理模式
 
@@ -607,7 +607,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 >
 > 2、和装饰器模式的区别：装饰器模式为了增强功能，而代理模式是为了加以控制。
 
-![静态代理设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/静态代理模式.png)
+![静态代理设计模式](images/静态代理模式.png)
 
 ### 动态代理
 
@@ -617,7 +617,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 3)、动态代理也叫做：JDK 代理、接口代理
 
-![动态代理设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/动态代理.png)
+![动态代理设计模式](images/动态代理.png)
 
 ### Cglib代理
 
@@ -635,7 +635,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意引入cglib依赖
 
-![cglib代理设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/cglib代理.png)
+![cglib代理设计模式](images/cglib代理.png)
 
 ## 模板模式
 
@@ -663,7 +663,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：为防止恶意操作，一般模板方法都加上 final 关键词。
 
-![模板设计模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/模板模式.png)
+![模板设计模式](images/模板模式.png)
 
 ## 命令模式
 
@@ -673,7 +673,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 士兵)。Invoker 是调用者（将军），Receiver 是被调用者（士兵），MyCommand 是命令，实现了 Command 接口，持有接收对象
 
-![命令模式原理图](https://github.com/jackhusky/Design-Patterns/blob/master/images/命令模式原理图.png)
+![命令模式原理图](images/命令模式原理图.png)
 
 意图：将一个请求封装成一个对象，从而使您可以用不同的请求对客户进行参数化。
 
@@ -697,7 +697,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：系统需要支持命令的撤销(Undo)操作和恢复(Redo)操作，也可以考虑使用命令模式，见命令模式的扩展。
 
-![命令模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/命令模式.png)
+![命令模式](images/命令模式.png)
 
 ## 访问者模式
 
@@ -725,7 +725,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 >  注意事项：访问者可以对功能进行统一，可以做报表、UI、拦截器与过滤器。
 
-![访问者模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/访问者模式.png)
+![访问者模式](images/访问者模式.png)
 
 ## 迭代器模式
 
@@ -755,7 +755,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：迭代器模式就是分离了集合对象的遍历行为，抽象出一个迭代器类来负责，这样既可以做到不暴露集合的内部结构，又可让外部代码透明地访问集合内部的数据。
 
-![迭代模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/迭代模式.png)
+![迭代模式](images/迭代模式.png)
 
 ## 观察者模式
 
@@ -790,7 +790,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项： 1、JAVA 中已经有了对观察者模式的支持类。 2、避免循环引用。 3、如果顺序执行，某一观察者错误会导致系统卡壳，一般采用异步方式。
 
-![观察者模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/观察者模式.png)
+![观察者模式](images/观察者模式.png)
 
 ## 备忘录模式
 
@@ -818,7 +818,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项： 1、为了符合迪米特原则，还要增加一个管理备忘录的类。 2、为了节约内存，可使用原型模式+备忘录模式。
 
-![备忘录模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/备忘录模式.png)
+![备忘录模式](images/备忘录模式.png)
 
 ## 状态模式
 
@@ -856,7 +856,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：在行为受状态约束的时候使用状态模式，而且状态不超过 5 个。
 
-![状态模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/状态模式.png)
+![状态模式](images/状态模式.png)
 
 ## 策略模式
 
@@ -883,7 +883,7 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 > 注意事项：如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。
 
-![策略模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/策略模式.png)
+![策略模式](images/策略模式.png)
 
 ## 责任链模式
 
@@ -911,4 +911,4 @@ SpringMvc 中的 HandlerAdapter, 就使用了适配器模式
 
 使用场景： 1、有多个对象可以处理同一个请求，具体哪个对象处理该请求由运行时刻自动确定。 2、在不明确指定接收者的情况下，向多个对象中的一个提交一个请求。 3、可动态指定一组对象处理请求。
 
-![责任链模式](https://github.com/jackhusky/Design-Patterns/blob/master/images/责任链模式.png)
+![责任链模式](images/责任链模式.png)
